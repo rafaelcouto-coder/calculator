@@ -1,20 +1,42 @@
 @charset "UTF-8";
 
+
 body {
-    background-color:  #9e5b5b57;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,52,89,1) 0%, rgba(0,168,232,1) 90% );
     font-family: Arial, sans-serif;
+}
+
+@media (min-width: 700px) {
+    body {
+        background-color: rgb(14, 111, 150);
+    }
+}
+
+.title {
+    padding: 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 div#interface{
     width: 210px; /* largura do box dsd */
     height: 310px; /* altura do box */
-    border: 1px solid rgb(172, 172, 172);
     padding: 5px 5px; /* padding à esquerda e à direita */ 
-    border-radius: 5px; /* arredontar borda*/
+    border-radius: 3px; /* arredontar borda*/
     position: absolute; 
     box-sizing: border-box;
-    background-color: #554b4f;
+    border: 1px solid grey;
+    background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
     text-align: center;
+    top: calc(50% - 155px);
+    left: calc(50% - 105px);
 }
 
 table#button{
@@ -33,7 +55,7 @@ h1 {
 
 input { 
     border: 1px solid rgb(172, 172, 172);
-    border-radius: 5px;
+    border-radius: 2px;
     height: 40px; /* altura do box */
     width: 190px;
     padding: 3px;
@@ -45,7 +67,7 @@ input {
 
 .bt {
     text-align: center;
-    border-radius: 5px; /* arredontar borda*/
+    border-radius: 2px; /* arredontar borda*/
     width: 45px; /* largura */
     height: 30px; /* altura*/
     cursor: pointer;
@@ -73,5 +95,13 @@ input {
 
 .bt.igual{
     background-color: #6461f3;
+}
+
+.rodape {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 35%;
+    color: #ffffff;
 }
 
