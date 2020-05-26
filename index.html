@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,50 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="function.js"></script>
 </head>
+
 <body>
     <div id="interface">
         <h1>Cassio</h1>
-            <input type="text" id="display"><br><br>
+        <input type="text" id="display"><br><br>
 
-            <table id="button">
-                <tr><td><button class ="bt op"></button></td><td><button  class ="bt op" onClick="pressOp(this)">^</button></td><td><button  class ="bt op" onClick="pressOp(this)">%</button></td><td><button   class ="bt op" onClick="clearAll()">AC</button></td></tr>
-                <tr><td><button class ="bt num" onClick="pressNum(this)">7</button></td><td><button class ="bt num" onClick="pressNum(this)">8</button></td><td><button class ="bt num" onClick="pressNum(this)">9</button></td><td><button class ="bt op" onClick="pressOp(this)">/</button></td></tr>
-                <tr><td><button class ="bt num" onClick="pressNum(this)">4</button></td><td><button class ="bt num" onClick="pressNum(this)">5</button></td><td><button class ="bt num" onClick="pressNum(this)">6</button></td><td><button class ="bt op" onClick="pressOp(this)">*</button></td></tr>
-                <tr><td><button class ="bt num" onClick="pressNum(this)">1</button></td><td><button class ="bt num" onClick="pressNum(this)">2</button></td><td><button class ="bt num" onClick="pressNum(this)">3</button></td><td><button class ="bt op" onClick="pressOp(this)">-</button></td></tr>
-                <tr><td><button class ="bt num" onClick="pressNum(this)">0</button></td><td><button class ="bt num" onClick="pressNum(this)">.</button></td><td><button class ="bt igual" onClick="pressIgual(this)">=</button></td><td><button class ="bt op" onClick="pressOp(this)">+</button></td></tr>
-            </table>
+        <table id="button">
+            <tr>
+                <td><button class="bt op"></button></td>
+                <td><button class="bt op" onClick="pressOp(this)">^</button></td>
+                <td><button class="bt op" onClick="pressOp(this)">%</button></td>
+                <td><button class="bt op" onClick="clearAll()">AC</button></td>
+            </tr>
+
+            <tr>
+                <td><button class="bt num" onClick="pressNum(this)">7</button></td>
+                <td><button class="bt num" onClick="pressNum(this)">8</button></td>
+                <td><button class="bt num" onClick="pressNum(this)">9</button></td>
+                <td><button class="bt op" onClick="pressOp(this)">/</button></td>
+            </tr>
+
+            <tr>
+                <td><button class="bt num" onClick="pressNum(this)">4</button></td>
+                <td><button class="bt num" onClick="pressNum(this)">5</button></td>
+                <td><button class="bt num" onClick="pressNum(this)">6</button></td>
+                <td><button class="bt op" onClick="pressOp(this)">*</button></td>
+            </tr>
+
+            <tr>
+                <td><button class="bt num" onClick="pressNum(this)">1</button></td>
+                <td><button class="bt num" onClick="pressNum(this)">2</button></td>
+                <td><button class="bt num" onClick="pressNum(this)">3</button></td>
+                <td><button class="bt op" onClick="pressOp(this)">-</button></td>
+            </tr>
+
+            <tr>
+                <td><button class="bt num" onClick="pressNum(this)">0</button></td>
+                <td><button class="bt num" onClick="pressNum(this)">.</button></td>
+                <td><button class="bt igual" onClick="pressIgual(this)">=</button></td>
+                <td><button class="bt op" onClick="pressOp(this)">+</button></td>
+            </tr>
+
+        </table>
     </div>
-
 </body>
+
 </html>

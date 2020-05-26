@@ -6,7 +6,7 @@ body {
 }
 
 div#interface{
-    width: 210px; /* largura do box */
+    width: 210px; /* largura do box dsd */
     height: 310px; /* altura do box */
     border: 1px solid rgb(172, 172, 172);
     padding: 5px 5px; /* padding à esquerda e à direita */ 
